@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import MenuCard from '../components/menuCard';
 
 const Index = () => {
     return (
@@ -9,26 +10,18 @@ const Index = () => {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <div className="w-screen h-screen bg-gray-800">
-                <div className="flex flex-col justify-center items-center h-2/3">
-                    <h1 className="text-white text-5xl font-medium">Portfolio</h1>
-                    <h2 className="text-white text-3xl font-light">Victor Girault</h2>
+                <div className="flex flex-col justify-center items-center h-1/2">
+                    <h1 className="text-white text-5xl font-semibold">Portfolio</h1>
+                    <h2 className="text-white text-3xl font-normal">Victor Girault</h2>
+                    <h3 className="text-white text-md font-light">BTS SIO SLAM</h3>
                 </div>
-                <div className="h-1/3 flex justify-around items-start">
-                    <Link href="/about">
-                        <div className="transition ease-in-out hover:bg-gray-700 px-5 py-2 rounded-lg drop-shadow border-4 border-gray-700 hover:cursor-pointer">
-                            <a className="text-white text-xl">About Me</a>
-                        </div>
-                    </Link>
-                    <Link href="/veille">
-                        <div className="transition ease-in-out hover:bg-gray-700 px-5 py-2 rounded-lg drop-shadow border-4 border-gray-700 hover:cursor-pointer">
-                            <a className="text-white text-xl">Veille Technologique</a>
-                        </div>
-                    </Link>
-                    <Link href="/e4">
-                        <div className="transition ease-in-out hover:bg-gray-700 px-5 py-2 rounded-lg drop-shadow border-4 border-gray-700 hover:cursor-pointer">
-                            <a className="text-white text-xl">E4</a>
-                        </div>
-                    </Link>
+                <div className="h-1/2">
+                    <div className="flex justify-around w-screen items-center">
+                        <MenuCard titre="À propos" link="/about">Pour en savoir plus sur mon parcours et mes connaiscances.</MenuCard>
+                        <MenuCard titre="Veille Technologique" link="/veille">Une veille est une activité consistant à rester au courant des dernières avancées et informations sur un secteur donné.</MenuCard>
+                        <MenuCard titre="Épreuve E4" link="/e4">Épreuve du BTS SIO consistant à répondre à une problématique.</MenuCard>
+                    </div>
+
                 </div>
             </div>
         </>
