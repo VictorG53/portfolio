@@ -16,7 +16,7 @@ const Index = () => {
                     <h3 className="text-white text-md font-light">BTS SIO SLAM</h3>
                 </div>
                 <div className="h-1/2">
-                    <div className="flex justify-around w-screen items-center">
+                    <div className="flex flex-wrap justify-around w-screen items-center">
                         <MenuCard titre="À propos" link="/about">Pour en savoir plus sur mon parcours et mes connaiscances.</MenuCard>
                         <MenuCard titre="Veille Technologique" link="/veille">Une veille est une activité consistant à rester au courant des dernières avancées et informations sur un secteur donné.</MenuCard>
                         <MenuCard titre="Épreuve E4" link="/e4">Épreuve du BTS SIO consistant à répondre à une problématique.</MenuCard>
