@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { FastArrowDown } from 'iconoir-react'
 import { useEffect, useState } from 'react';
-import GlowingButton from '../../components/glowing_button';
+import GlowingButton from '../../components/glowingButton';
 
 
 const Home = () => {
