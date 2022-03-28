@@ -9,7 +9,7 @@ const Home = () => {
     const [visibility, setVisibility] = useState('opacity-100');
     const handleScroll = () => {
         const position = window.pageYOffset;
-        if (position > 100) {
+        if (position > 300) {
             setVisibility('opacity-0');
         }
         else {
@@ -47,9 +47,12 @@ const Home = () => {
         </div>
         <div className="h-screen bg-gray-900 flex justify-around items-center flex-wrap" id="summary">
             <div className="flex flex-wrap justify-around items-center w-screen">
-                <GlowingButton content="Page 1" link="/portfolio/page1" />
-                <GlowingButton content="Page 2" link="/portfolio/page2" />
-                <GlowingButton content="Page 3" link="/portfolio/page3" />
+                <GlowingButton classes="mb-4 w-64 mx-4" content="Gérer le patrimoine informatique" link="/portfolio/page1" />
+                <GlowingButton classes="mb-4 w-64 mx-4" content="Répondre aux incidents et aux demandes d’assistance et d’évolution" link="/portfolio/page2" />
+                <GlowingButton classes="mb-4 w-64 mx-4" content="Développer la présence en ligne de l’organisation" link="/portfolio/page3" />
+                <GlowingButton classes="mb-4 w-64 mx-4" content="Travailler en mode projet" link="/portfolio/page4" />
+                <GlowingButton classes="mb-4 w-64 mx-4" content="Mettre à disposition des utilisateurs un service informatique" link="/portfolio/page5" />
+                <GlowingButton classes="mb-4 w-64 mx-4" content="Organiser son développement professionnel" link="/portfolio/page6" />
             </div>
 
         </div>
