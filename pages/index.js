@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import GlowingButton from '../components/glowing_button'
+import GlowingButton from '../components/glowingButton'
 const Index = () => {
     return (
         <>
