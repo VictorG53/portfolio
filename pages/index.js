@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import GlowingButton from '../components/glowingButton'
+import { useState } from 'react';
 const Index = () => {
+    const [password, setPassword] = useState("");
+
+
     return (
         <>
             <Head>
@@ -11,7 +15,7 @@ const Index = () => {
                 <div className="flex flex-col justify-center items-center h-5/6 w-full">
                     <h1 className="text-white text-center text-3xl font-bold">Victor Girault</h1>
                     <h2 className="text-xl mb-6 text-center text-white tracking-wider">Student in computer development</h2>
-                    <GlowingButton content="See my Portfolio" link="/portfolio" />
+                    <GlowingButton link="/portfolio" >See my Portfolio</GlowingButton>
                 </div>
                 <div className=" flex justify-center items-end h-1/6">
                     <h3 className="text-white text-center font-extralight">© 2022 Victor Girault</h3>

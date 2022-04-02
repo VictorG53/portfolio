@@ -19,7 +19,6 @@ const Home = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
-
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
@@ -47,12 +46,12 @@ const Home = () => {
         </div>
         <div className="h-screen bg-gray-900 flex justify-around items-center flex-wrap" id="summary">
             <div className="flex flex-wrap justify-around items-center w-screen">
-                <GlowingButton classes="mb-4 w-64 mx-4" content="Gérer le patrimoine informatique" link="/portfolio/page1" />
-                <GlowingButton classes="mb-4 w-64 mx-4" content="Répondre aux incidents et aux demandes d’assistance et d’évolution" link="/portfolio/page2" />
-                <GlowingButton classes="mb-4 w-64 mx-4" content="Développer la présence en ligne de l’organisation" link="/portfolio/page3" />
-                <GlowingButton classes="mb-4 w-64 mx-4" content="Travailler en mode projet" link="/portfolio/page4" />
-                <GlowingButton classes="mb-4 w-64 mx-4" content="Mettre à disposition des utilisateurs un service informatique" link="/portfolio/page5" />
-                <GlowingButton classes="mb-4 w-64 mx-4" content="Organiser son développement professionnel" link="/portfolio/page6" />
+                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page1">Gérer le patrimoine informatique</GlowingButton>
+                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page2">Répondre aux incidents et aux demandes d’assistance et d’évolution</GlowingButton>
+                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page3">Développer la présence en ligne de l’organisation</GlowingButton>
+                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page4">Travailler en mode projet</GlowingButton>
+                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page5">Mettre à disposition des utilisateurs un service informatique</GlowingButton>
+                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page6">Organiser son développement professionnel</GlowingButton>
             </div>
 
         </div>
