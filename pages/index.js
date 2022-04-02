@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { useLoginContext } from '../components/context';
 const Index = () => {
     const router = useRouter();
 
     const [password, setPassword] = useState("");
+    const { value, setValue } = useLoginContext();
 
     const checkAndRedirect = (e) => {
         e.preventDefault();
@@ -13,6 +15,7 @@ const Index = () => {
                 alert("Wrong Password");
             }
             else {
+                setValue(true);
                 router.push('/portfolio', null, { shallow: true });
             }
         }

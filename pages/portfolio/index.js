@@ -2,11 +2,19 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { FastArrowDown } from 'iconoir-react'
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import GlowingButton from '../../components/glowingButton';
+import { useLoginContext } from '../../components/context';
+import Redirect from '../redirect';
 
 
 const Home = () => {
+    const { value } = useLoginContext();
+
+    const router = useRouter();
+
     const [visibility, setVisibility] = useState('opacity-100');
+
     const handleScroll = () => {
         const position = window.pageYOffset;
         if (position > 300) {
@@ -23,6 +31,10 @@ const Home = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
+    if (!value) {
+        return <Redirect />
+    }
 
     return <>
         <Head>
