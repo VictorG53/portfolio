@@ -6,12 +6,13 @@ const Index = () => {
     const router = useRouter();
 
     const [password, setPassword] = useState("");
-    const { value, setValue } = useLoginContext();
+    const { setValue } = useLoginContext();
 
     const checkAndRedirect = (e) => {
         e.preventDefault();
         if (password) {
-            if (password != process.env.password) {
+            if (password != process.env.NEXT_PUBLIC_PASSWORD) {
+                console.log(process.env.NEXT_PUBLIC_PASSWORD)
                 alert("Wrong Password");
             }
             else {
@@ -20,7 +21,6 @@ const Index = () => {
             }
         }
     }
-
 
     return (
         <>

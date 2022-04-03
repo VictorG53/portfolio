@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  env: {
-    password: 'log2portfolio2022vg'
-  }
+  reactStrictMode: true
 }
 
 module.exports = nextConfig
