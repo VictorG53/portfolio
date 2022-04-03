@@ -6,7 +6,7 @@ const Index = () => {
     const router = useRouter();
 
     const [password, setPassword] = useState("");
-    const { value, setValue } = useLoginContext();
+    const { setValue } = useLoginContext();
 
     const checkAndRedirect = (e) => {
         e.preventDefault();

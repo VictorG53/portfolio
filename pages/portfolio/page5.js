@@ -1,7 +1,16 @@
 import BackButton from "../../components/backButton";
 import Head from 'next/head';
+import { useLoginContext } from '../../components/context';
+import Redirect from '../redirect';
 
 const page5 = () => {
+
+    const { value } = useLoginContext();
+
+    if (!value) {
+        return <Redirect />
+    }
+
     return (
         <>
             <Head>
