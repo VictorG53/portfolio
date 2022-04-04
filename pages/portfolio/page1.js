@@ -1,4 +1,5 @@
-import BackButton from "../../components/backButton";
+import GlowingButton from "../../components/glowingButton";
+import { ArrowLeft } from "iconoir-react";
 import Head from 'next/head';
 import { useLoginContext } from '../../components/useContext';
 import Redirect from '../redirect';
@@ -19,7 +20,7 @@ const Page1 = () => {
             </Head>
             <div className="w-full min-h-screen bg-gray-900 pb-10">
                 <div className="w-full p-3 flex items-start mb-10">
-                    <BackButton link="/portfolio#summary" />
+                    <GlowingButton link="/portfolio#summary"><ArrowLeft /> Back</GlowingButton>
                     <h1 className="lg:text-3xl sm:text-2xl text-xl mx-auto text-white self-center text-center">Gérer le patrimoine <br /> informatique</h1>
                 </div>
                 <div className="flex flex-col lg:mx-12 xl:mx-24 2xl:mx-64 mx-2 border border-gray-700 border-2 rounded-lg p-5">
