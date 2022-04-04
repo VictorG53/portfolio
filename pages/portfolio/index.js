@@ -40,7 +40,7 @@ const Home = () => {
             <title>Victor G. - Portfolio</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <div className="h-screen w-full bg-gradient-to-b from-gray-800 to-gray-900">
+        <div className="h-screen bg-gradient-to-b from-gray-800 to-gray-900">
             <div className="flex h-full flex-col justify-center items-center pt-5">
                 <div className="h-5/6 flex flex-col justify-center items-center">
                     <h1 className="font-semibold text-white text-6xl">Portfolio</h1>
@@ -57,12 +57,12 @@ const Home = () => {
         </div>
         <div className="h-screen bg-gray-900 flex justify-around items-center flex-wrap" id="summary">
             <div className="flex flex-wrap justify-around items-center w-screen">
-                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page1">Gérer le patrimoine informatique</GlowingButton>
-                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page2">Répondre aux incidents et aux demandes d’assistance et d’évolution</GlowingButton>
-                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page3">Développer la présence en ligne de l’organisation</GlowingButton>
-                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page4">Travailler en mode projet</GlowingButton>
-                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page5">Mettre à disposition des utilisateurs un service informatique</GlowingButton>
-                <GlowingButton classes="mb-6 w-64 h-full mx-4" link="/portfolio/page6">Organiser son développement professionnel</GlowingButton>
+                <GlowingButton classes="mb-6 w-64 mx-4" link="/portfolio/page1">Gérer le patrimoine informatique</GlowingButton>
+                <GlowingButton classes="mb-6 w-64 mx-4" link="/portfolio/page2">Répondre aux incidents et aux demandes d’assistance et d’évolution</GlowingButton>
+                <GlowingButton classes="mb-6 w-64 mx-4" link="/portfolio/page3">Développer la présence en ligne de l’organisation</GlowingButton>
+                <GlowingButton classes="mb-6 w-64 mx-4" link="/portfolio/page4">Travailler en mode projet</GlowingButton>
+                <GlowingButton classes="mb-6 w-64 mx-4" link="/portfolio/page5">Mettre à disposition des utilisateurs un service informatique</GlowingButton>
+                <GlowingButton classes="mb-6 w-64 mx-4" link="/portfolio/page6">Organiser son développement professionnel</GlowingButton>
             </div>
 
         </div>
