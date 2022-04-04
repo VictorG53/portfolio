@@ -17,7 +17,7 @@ const Page4 = () => {
                 <title>Victor G. - Travailler en mode projet</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <div className="w-screen h-screen bg-gray-900">
+            <div className="w-full h-screen bg-gray-900">
                 <div className="w-full p-3 flex items-start">
                     <BackButton link="/portfolio#summary" />
                     <h1 className="text-3xl mx-auto text-white self-center text-center">Travailler en mode projet</h1>
