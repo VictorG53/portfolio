@@ -1,9 +1,9 @@
 import BackButton from "../../components/backButton";
 import Head from 'next/head';
-import { useLoginContext } from '../../components/context';
+import { useLoginContext } from '../../components/useContext';
 import Redirect from '../redirect';
 
-const page4 = () => {
+const Page4 = () => {
 
     const { value } = useLoginContext();
 
@@ -27,4 +27,4 @@ const page4 = () => {
     )
 }
 
-export default page4;
+export default Page4;

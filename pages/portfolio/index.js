@@ -3,16 +3,14 @@ import Link from 'next/link'
 import { FastArrowDown } from 'iconoir-react'
 import { useEffect, useState } from 'react';
 import GlowingButton from '../../components/glowingButton';
-import { useLoginContext } from '../../components/context';
+import { useLoginContext } from '../../components/useContext';
 import Redirect from '../redirect';
 
 
 const Home = () => {
     const { value } = useLoginContext();
 
-    if (!value) {
-        return <Redirect />
-    }
+
 
     const [visibility, setVisibility] = useState('opacity-100');
 
@@ -33,7 +31,9 @@ const Home = () => {
         };
     }, []);
 
-
+    if (!value) {
+        return <Redirect />
+    }
 
     return <>
         <Head>

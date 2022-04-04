@@ -1,4 +1,4 @@
-import { AppWrapper } from '../components/context';
+import { AppWrapper } from '../components/useContext';
 import '../styles/globals.css';
 
 

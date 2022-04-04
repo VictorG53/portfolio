@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { useLoginContext } from '../components/context';
+import { useLoginContext } from '../components/useContext';
 const Index = () => {
     const router = useRouter();
 
