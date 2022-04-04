@@ -56,7 +56,7 @@ const Page1 = () => {
                     <h3 className="text-white text-2xl mx-auto mb-10">Mise en place d&apos;un Active Directory</h3>
                     <div className="flex items-center justify-around flex-wrap">
                         <p className="text-white text-justify font-light mb-3 mx-2 lg:mx-12">
-                            Durant ma formation à l'IIA, j'ai appris à mettre en place un Active Directory. Ainsi, j'ai créé plusieurs utilisateurs que j'ai assigné à plusieurs groupes afin de gérer leurs privilèges. Leurs privilèges étant l'accès à certains dossiers ou l'accès au panneau de configuration.
+                            Durant ma formation à l&apos;IIA, j&apos;ai appris à mettre en place un Active Directory. Ainsi, j&apos;ai créé plusieurs utilisateurs que j&apos;ai assigné à plusieurs groupes afin de gérer leurs privilèges. Leurs privilèges étant l&apos;accès à certains dossiers ou l&apos;accès au panneau de configuration.
                         </p>
                         <div className="flex flex-wrap items-center justify-around w-full mx-2 lg:mx-12">
                             <img className="mb-3 rounded" src="/img/page2_1.png"></img>
