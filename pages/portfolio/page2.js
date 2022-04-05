@@ -38,10 +38,11 @@ const Page2 = () => {
                 </div>
                 <div className="flex flex-col mt-12 lg:mx-12 xl:mx-24 2xl:mx-64 mx-2 border border-gray-700 border-2 rounded-lg p-5">
                     <h3 className="text-white text-2xl mx-auto mb-10">Ajout d&apos;une fonctionnalité sur un site</h3>
-                    <div className="flex items-center justify-around  mx-5">
-                        <p className="text-white text-justify font-light w-1/2 mb-3 lg:mx-12">
+                    <div className="flex flex-wrap mx-3 justify-around items-center w-full">
+                        <p className="text-white text-justify font-light break-words mx-2 lg:mx-12 mb-3 basis-full">
                             Pour répondre à la demande d&apos;évolution d&apos;un client pendant mon stage de 1ère année, j&apos;ai réalisé une &quot;roue-menu&quot; sur le site du client.
-                            Il m&apos;a fallu comprendre le fonctionnement des balises &quot;svg&quot;, et apprendre à utiliser jQuery (imposé par l&apos;entreprise).
+                            Il m&apos;a fallu comprendre le fonctionnement des balises &quot;svg&quot;, et apprendre à utiliser jQuery (imposé par l&apos;entreprise). <br />
+                            En fonction du clic sur la roue, le texte et le bouton change afin de créer un menu en forme de roue.
                         </p>
                         <Image className="w-1/2 mb-3 rounded lg:mx-12" width={678} height={300} alt="" src="/img/rouemenu.png"></Image>
                     </div>
