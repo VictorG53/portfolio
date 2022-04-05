@@ -17,10 +17,10 @@ const Home = () => {
     const handleScroll = () => {
         const position = window.pageYOffset;
         if (position > 300) {
-            setVisibility('opacity-0');
+            setVisibility('opacity-0 hover:cursor-default');
         }
         else {
-            setVisibility('opacity-100');
+            setVisibility('opacity-100 hover:cursor-pointer');
         }
     };
 
