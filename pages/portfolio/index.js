@@ -78,7 +78,7 @@ const Home = () => {
                     <GlowingButton classes="mb-6 w-64 h-24 mx-2" link="/portfolio/page6">Organiser son développement professionnel</GlowingButton>
                 </div>
             </div>
-            <a onMouseOver={eyeOver} onMouseOut={eyeOut} href="/CV_Victor_Girault.pdf" className="flex rounded border px-5 py-2 text-white transition hover:shadow-[0_0_20px_1px_rgba(255,255,255,0.6)] hover:text-gray-900 hover:bg-white" target="_blank">{eye == 'open' ? <EyeEmpty className="mr-2" /> : <EyeClose className="mr-2" />} See my CV</a>
+            <a onMouseOver={eyeOver} onMouseOut={eyeOut} href="/CV_Victor_Girault.pdf" className="flex rounded border px-5 py-2 text-white transition hover:shadow-[0_0_20px_1px_rgba(255,255,255,0.6)] hover:text-gray-900 hover:bg-white" target="_blank">{eye == 'open' ? <EyeEmptyterm className="mr-2" /> : <EyeClose className="mr-2" />} See my CV</a>
         </div>
     </>
 }
