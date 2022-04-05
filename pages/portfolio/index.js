@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { FastArrowDown, Download } from 'iconoir-react'
+import { FastArrowDown, EyeAlt, EyeClose } from 'iconoir-react'
 import { useEffect, useState } from 'react';
 import GlowingButton from '../../components/glowingButton';
 import { useLoginContext } from '../../components/useContext';
@@ -23,6 +23,17 @@ const Home = () => {
             setVisibility('opacity-100 hover:cursor-pointer');
         }
     };
+
+    const [eye, setEye] = useState('close');
+
+
+    const eyeOver = () => {
+        setEye('open');
+    }
+
+    const eyeOut = () => {
+        setEye('close');
+    }
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
@@ -57,18 +68,18 @@ const Home = () => {
         </div>
         <div className="h-screen bg-gray-900 flex flex-col justify-around items-center flex-wrap" id="summary">
             <div className="basis-2/3 flex flex-col items-center justify-center w-full">
-                <h3 className="text-center text-3xl text-white mb-5">All porfolio pages</h3>
+                <h3 className="text-center text-3xl text-white mb-5">Toutes les pages du portfolio</h3>
                 <div className="flex flex-wrap justify-around items-center w-full">
-                    <GlowingButton classes="mb-6 w-64" link="/portfolio/page1">Gérer le patrimoine informatique</GlowingButton>
-                    <GlowingButton classes="mb-6 w-64" link="/portfolio/page2">Répondre aux incidents et aux demandes d’assistance et d’évolution</GlowingButton>
-                    <GlowingButton classes="mb-6 w-64" link="/portfolio/page3">Développer la présence en ligne de l’organisation</GlowingButton>
-                    <GlowingButton classes="mb-6 w-64" link="/portfolio/page4">Travailler en mode projet</GlowingButton>
-                    <GlowingButton classes="mb-6 w-64" link="/portfolio/page5">Mettre à disposition des utilisateurs un service informatique</GlowingButton>
-                    <GlowingButton classes="mb-6 w-64" link="/portfolio/page6">Organiser son développement professionnel</GlowingButton>
+                    <GlowingButton classes="mb-6" link="/portfolio/page1">Gérer le patrimoine informatique</GlowingButton>
+                    <GlowingButton classes="mb-6" link="/portfolio/page2">Répondre aux incidents et aux demandes d’assistance et d’évolution</GlowingButton>
+                    <GlowingButton classes="mb-6" link="/portfolio/page3">Développer la présence en ligne de l’organisation</GlowingButton>
+                    <GlowingButton classes="mb-6" link="/portfolio/page4">Travailler en mode projet</GlowingButton>
+                    <GlowingButton classes="mb-6" link="/portfolio/page5">Mettre à disposition des utilisateurs un service informatique</GlowingButton>
+                    <GlowingButton classes="mb-6" link="/portfolio/page6">Organiser son développement professionnel</GlowingButton>
                 </div>
             </div>
-            <div>
-                <a href="/CV_Victor_Girault.pdf" className="hover:cursor-pointer max-w-24 mb-4 px-6 py-2 border text-center text-white rounded hover:bg-white transition flex hover:text-gray-900 hover:shadow-[0_0_20px_1px_rgba(255,255,255,0.6)]" target="_blank"><Download />Download CV</a>
+            <div >
+                <a onMouseOver={eyeOver} onMouseOut={eyeOut} href="/CV_Victor_Girault.pdf" className="hover:cursor-pointer max-w-24 mb-4 px-6 py-2 border text-center text-white rounded hover:bg-white transition flex hover:text-gray-900 hover:shadow-[0_0_20px_1px_rgba(255,255,255,0.6)]" target="_blank">{eye == 'open' ? <EyeAlt className="mr-2" /> : <EyeClose className="mr-2" />} See my CV</a>
             </div>
 
         </div>
