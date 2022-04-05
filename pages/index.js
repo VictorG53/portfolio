@@ -12,7 +12,6 @@ const Index = () => {
         e.preventDefault();
         if (password) {
             if (password != process.env.NEXT_PUBLIC_PASSWORD) {
-                console.log(process.env.NEXT_PUBLIC_PASSWORD)
                 alert("Wrong Password");
             }
             else {
