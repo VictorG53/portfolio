@@ -3,6 +3,7 @@ import { ArrowLeft } from "iconoir-react";
 import Head from 'next/head';
 import { useLoginContext } from '../../components/useContext';
 import Redirect from '../redirect';
+import Image from 'next/image';
 
 const Page1 = () => {
 
@@ -49,7 +50,7 @@ const Page1 = () => {
                                     BACKUP DATABASE @dbName TO DISK = @path;&quot;;<br />
                                 </p>
                             </div>
-                            <img className="rounded" src="/img/page1_1.png"></img>
+                            <Image className="rounded" width={402} height={182} alt="" src="/img/page1_1.png"></Image>
                         </div>
                     </div>
                 </div>
@@ -60,8 +61,8 @@ const Page1 = () => {
                             Durant ma formation à l&apos;IIA, j&apos;ai appris à mettre en place un Active Directory. Ainsi, j&apos;ai créé plusieurs utilisateurs que j&apos;ai assigné à plusieurs groupes afin de gérer leurs privilèges dans le domaine. Leurs privilèges étant l&apos;accès à certains dossiers ou l&apos;accès au panneau de configuration.
                         </p>
                         <div className="flex flex-wrap items-center justify-around w-full mx-2 lg:mx-12">
-                            <img className="mb-3 rounded" src="/img/page2_1.png"></img>
-                            <img className="mb-3 rounded" src="/img/page2_2.png"></img>
+                            <Image className="mb-3 rounded" width={466} height={111} alt="" src="/img/page1_2.png"></Image>
+                            <Image className="mb-3 rounded" width={468} height={188} alt="" src="/img/page1_3.png"></Image>
                         </div>
                     </div>
                 </div>
