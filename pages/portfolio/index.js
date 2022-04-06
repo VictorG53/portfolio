@@ -68,7 +68,7 @@ const Home = () => {
         </div>
         <div className="min-h-screen bg-gray-900 flex flex-col justify-around items-center flex-wrap" id="summary">
             <div className="basis-2/3 flex flex-col items-center justify-center w-full">
-                <h3 className="text-center text-3xl text-white mb-10">Toutes les pages du portfolio</h3>
+                <h3 className="text-center text-3xl text-white mb-10">Compétences</h3>
                 <div className="flex flex-wrap justify-around items-center w-full">
                     <GlowingButton classes="mb-6 w-64 h-24 mx-2" link="/portfolio/page1">Gérer le patrimoine informatique</GlowingButton>
                     <GlowingButton classes="mb-6 w-64 h-24 mx-2" link="/portfolio/page2">Répondre aux incidents et aux demandes d’assistance et d’évolution</GlowingButton>
