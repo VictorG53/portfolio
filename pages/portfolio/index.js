@@ -68,7 +68,7 @@ const Home = () => {
         </div>
         <div className="min-h-screen bg-gray-900 flex flex-col justify-around items-center flex-wrap" id="summary">
             <div className="basis-2/3 flex flex-col items-center justify-center w-full">
-                <h3 className="text-center text-3xl text-white mb-10">Compétences</h3>
+                <h3 className="text-center text-5xl text-white mb-16">Compétences</h3>
                 <div className="flex flex-wrap justify-around items-center w-full">
                     <GlowingButton classes="mb-6 w-64 h-24 mx-2" link="/portfolio/page1">Gérer le patrimoine informatique</GlowingButton>
                     <GlowingButton classes="mb-6 w-64 h-24 mx-2" link="/portfolio/page2">Répondre aux incidents et aux demandes d’assistance et d’évolution</GlowingButton>
@@ -78,11 +78,11 @@ const Home = () => {
                     <GlowingButton classes="mb-6 w-64 h-24 mx-2" link="/portfolio/page6">Organiser son développement professionnel</GlowingButton>
                 </div>
             </div>
+            <div className="w-10/12 rounded h-0.5 bg-gray-500 my-10 lg:my-0" />
             <div className="flex flex-col justify-center w-full">
-                <h3 className="text-center text-3xl text-white mb-10">Mon CV</h3>
+                <h3 className="text-center text-5xl text-white mb-10">Mon CV</h3>
                 <div className="flex flex-wrap justify-center items-center w-full">
                     <a onMouseOver={eyeOver} onMouseOut={eyeOut} href="/CV_Victor_Girault.pdf" className="flex mb-3 mx-5 rounded border px-5 py-2 text-white transition hover:shadow-[0_0_20px_1px_rgba(255,255,255,0.6)] hover:text-gray-900 hover:bg-white" target="_blank">{eye == 'open' ? <EyeEmpty className="mr-2" /> : <EyeClose className="mr-2" />} Voir mon CV</a>
-                    <a download className="flex mx-5 mb-3 rounded border px-5 py-2 text-white transition hover:shadow-[0_0_20px_1px_rgba(255,255,255,0.6)] hover:text-gray-900 hover:bg-white" href="/CV_Victor_Girault.pdf"><Download /> Télecharger mon CV</a>
                 </div>
             </div>
 
