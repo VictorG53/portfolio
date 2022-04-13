@@ -34,23 +34,8 @@ const Page1 = () => {
                             Le script powershell utilisé et la tâche planifiée :
                         </p>
                         <div className="flex flex-wrap mx-3 justify-around items-center w-full">
-                            <div className="border border-gray-500 rounded py-2 px-4 mb-3">
-                                <h3 className="text-gray-300 mb-2">Code de sauvegarde : </h3>
-                                <p className="text-gray-400 font-extralight text-sm break-words">
-                                    cd C:\backup\bdd <br />
-                                    If ((Get-ChildItem -File | Measure-Object).Count -ge 25)&#123; <br />
-                                    &nbsp;&nbsp;&nbsp;Get - ChildItem - File &#124; Sort CreationTime &#124; Select -First 1 &#124; Remove-Item<br />
-                                    &#125;<br /><br />
-
-                                    sqlcmd -S AD1 -U Orchard_User -P Not24get -Q<br />
-                                    &quot;DECLARE @path NVARCHAR(100);<br />
-                                    DECLARE @dbName NVARCHAR(100);<br />
-                                    SET @path = &apos;C:\backup\bdd\dump_&apos;+format(getdate(),&apos;yyyy-MM-dd_HH_mm_ss&apos;)+&apos;.sql&apos;;<br />
-                                    SET @dbName = &apos;Orchard&apos;<br />
-                                    BACKUP DATABASE @dbName TO DISK = @path;&quot;;<br />
-                                </p>
-                            </div>
-                            <Image className="rounded" width={402} height={182} alt="" src="/img/page1_1.png"></Image>
+                            <Image className="rounded" width={650} height={270} alt="" src="/img/powershell_script.png"></Image>
+                            <Image className="rounded" width={522} height={236} alt="" src="/img/page1_1.png"></Image>
                         </div>
                     </div>
                 </div>
