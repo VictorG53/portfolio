@@ -29,11 +29,11 @@ const Page3 = () => {
                     <h3 className="text-white text-2xl mx-auto mb-10">Création du site internet Megacasting</h3>
                     <div className="flex items-center justify-around flex-wrap">
                         <p className="text-white text-justify font-light mb-3 mx-2 lg:mx-12">
-                            Pour le projet Megacasting, j'ai eu à créer le site de l'entreprise pour permettre aux artistes de trouver des castings en ligne. Ce site permet aux artistes de créer un compte et de s'y connecter pour pouvoir postuler directement aux castings qui les intérèssent. Il permet aussi aux artistes de voir à quels castings ils ont déja postuler.
+                            Pour le projet Megacasting, j&apos;ai eu à créer le site de l&apos;entreprise pour permettre aux artistes de trouver des castings en ligne. Ce site permet aux artistes de créer un compte et de s&apos;y connecter pour pouvoir postuler directement aux castings qui les intérèssent. Il permet aussi aux artistes de voir à quels castings ils ont déja postuler.
                         </p>
                         <Image className="mb-3 rounded mx-4 lg:mx-12" width={1130} height={500} alt="" src="/img/megacasting_website.png"></Image>
                         <p className="text-white text-justify font-light mb-3 mx-2 lg:mx-12 mt-5">
-                            Le site permet de rechercher et filtrer les castings qui ont été validé auprès des employés de Megacasting (grâce à l'application de gestion de base de donnée).
+                            Le site permet de rechercher et filtrer les castings qui ont été validé auprès des employés de Megacasting (grâce à l&apos;application de gestion de base de donnée).
                         </p>
                     </div>
                 </div>
