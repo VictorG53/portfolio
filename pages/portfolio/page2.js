@@ -21,8 +21,9 @@ const Page2 = () => {
             </Head>
             <div className="w-full min-h-screen bg-gray-900 lg:pb-10 pb-2">
                 <div className="w-full p-3 flex items-start mb-10">
-                    <GlowingButton link="/portfolio#summary"><ArrowLeft /> Back</GlowingButton>
+                    <GlowingButton link="/portfolio#summary"><ArrowLeft />Retour</GlowingButton>
                     <h1 className="lg:text-3xl sm:text-2xl text-xl mx-auto text-white self-center text-center">Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</h1>
+                    <div className="w-24"></div>
                 </div>
                 <div className="flex flex-col mt-12 lg:mx-12 xl:mx-24 2xl:mx-64 mx-2 border border-gray-700 border-2 rounded-lg p-5">
                     <h3 className="text-white text-2xl mx-auto mb-10">Mise en place de GLPI</h3>

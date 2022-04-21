@@ -21,8 +21,9 @@ const Page1 = () => {
             </Head>
             <div className="w-full min-h-screen bg-gray-900 lg:pb-10 pb-2">
                 <div className="w-full p-3 flex items-start mb-10">
-                    <GlowingButton link="/portfolio#summary"><ArrowLeft /> Back</GlowingButton>
+                    <GlowingButton link="/portfolio#summary"><ArrowLeft />Retour</GlowingButton>
                     <h1 className="lg:text-3xl sm:text-2xl text-xl mx-auto text-white self-center text-center">Gérer le patrimoine <br /> informatique</h1>
+                    <div className="w-24"></div>
                 </div>
                 <div className="flex flex-col lg:mx-12 xl:mx-24 2xl:mx-64 mx-2 border border-gray-700 border-2 rounded-lg p-5">
                     <h3 className="text-white text-2xl mx-auto mb-10">Mise en place d&apos;une sauvegarde automatique de la base de donnée</h3>

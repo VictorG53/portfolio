@@ -20,8 +20,9 @@ const Page4 = () => {
             </Head>
             <div className="w-full min-h-screen bg-gray-900 lg:pb-10 pb-2">
                 <div className="w-full p-3 flex items-start mb-10">
-                    <GlowingButton link="/portfolio#summary"><ArrowLeft /> Back</GlowingButton>
+                    <GlowingButton link="/portfolio#summary"><ArrowLeft />Retour</GlowingButton>
                     <h1 className="lg:text-3xl sm:text-2xl text-xl mx-auto text-white self-center text-center">Travailler en mode projet</h1>
+                    <div className="w-24"></div>
                 </div>
             </div>
         </>
