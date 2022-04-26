@@ -32,7 +32,7 @@ const Page2 = () => {
                             GLPI (Gestionnaire Libre de Parc Informatique) permet de gérer les services informatique et d&apos;assistance d&apos;un parc informatique. Pendant ma formation en BTS à l&apos;IIA, j&apos;ai appris à mettre en place GLPI sur une machine virtuelle Debian 10 pour gérer le serveur principal (Windows Server 2019).
                         </p>
                         <Image className="mb-3 rounded mx-4 lg:mx-12" width={925} height={500} alt="" src="/img/glpi.png"></Image>
-                        <p className="text-white text-justify font-light mb-3 mx-2 lg:mx-12 mt-5">
+                        <p className="text-white text-justify font-light mb-2 mx-2 lg:mx-12 mt-5">
                             GLPI nous à permis, par exemple, de gérer l&apos;importance des tickets et d&apos;attribuer une règle pour prioriser les tickets qui n&apos;avait toujours pas été traité à partir d&apos;un certains temps.
                         </p>
                     </div>
