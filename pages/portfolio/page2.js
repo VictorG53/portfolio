@@ -1,5 +1,4 @@
-import GlowingButton from "../../components/glowingButton";
-import { ArrowLeft } from "iconoir-react";
+import BackButton from "../../components/backButton";
 import Head from 'next/head';
 import { useLoginContext } from '../../components/useContext';
 import Redirect from '../redirect';
@@ -21,9 +20,9 @@ const Page2 = () => {
             </Head>
             <div className="w-full min-h-screen bg-gray-900 lg:pb-10 pb-2">
                 <div className="w-full p-3 flex items-start mb-10">
-                    <GlowingButton link="/portfolio#summary"><ArrowLeft />Retour</GlowingButton>
-                    <h1 className="lg:text-3xl sm:text-2xl text-xl mx-auto text-white self-center text-center">Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</h1>
-                    <div className="w-24"></div>
+                    <BackButton link="/portfolio/#summary" />
+                    <h1 className="lg:text-3xl sm:text-2xl text-xl mx-auto px-5 text-white self-center text-center">Répondre aux incidents et aux demandes d&apos;assistance et d&apos;évolution</h1>
+                    <div className="lg:w-[115px] w-[50px]"></div>
                 </div>
                 <div className="flex flex-col mt-12 lg:mx-12 xl:mx-24 2xl:mx-64 mx-2 border border-gray-700 border-2 rounded-lg p-5">
                     <h3 className="text-white text-2xl mx-auto mb-10">Mise en place de GLPI</h3>
@@ -39,8 +38,8 @@ const Page2 = () => {
                 </div>
                 <div className="flex flex-col mt-12 lg:mx-12 xl:mx-24 2xl:mx-64 mx-2 border border-gray-700 border-2 rounded-lg p-5">
                     <h3 className="text-white text-2xl mx-auto mb-10">Ajout d&apos;une fonctionnalité sur un site</h3>
-                    <div className="flex flex-wrap mx-3 justify-around items-center w-full">
-                        <p className="text-white text-justify font-light break-words mx-2 lg:mx-12 mb-3 basis-full">
+                    <div className="flex items-center justify-around flex-wrap">
+                        <p className="text-white text-justify font-light mb-3 mx-2 lg:mx-12">
                             Pour répondre à la demande d&apos;évolution d&apos;un client pendant mon stage de 1ère année, j&apos;ai réalisé une &quot;roue-menu&quot; sur le site du client.
                             Il m&apos;a fallu comprendre le fonctionnement des balises &quot;svg&quot;, et apprendre à utiliser jQuery (imposé par l&apos;entreprise). <br />
                             En fonction du clic sur la roue, le texte et le bouton change afin de créer un menu en forme de roue.

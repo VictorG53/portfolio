@@ -1,5 +1,4 @@
-import GlowingButton from "../../components/glowingButton";
-import { ArrowLeft } from "iconoir-react";
+import BackButton from "../../components/backButton";
 import Head from 'next/head';
 import { useLoginContext } from '../../components/useContext';
 import Redirect from '../redirect';
@@ -21,9 +20,9 @@ const Page3 = () => {
             </Head>
             <div className="w-full min-h-screen bg-gray-900 lg:pb-10 pb-2">
                 <div className="w-full p-3 flex items-start mb-10">
-                    <GlowingButton link="/portfolio#summary"><ArrowLeft />Retour</GlowingButton>
+                    <BackButton link="/portfolio/#summary" />
                     <h1 className="lg:text-3xl sm:text-2xl text-xl mx-auto text-white self-center text-center">Développer la présence en ligne de l&apos;organisation</h1>
-                    <div className="w-24"></div>
+                    <div className="lg:w-[115px] w-[50px]"></div>
                 </div>
                 <div className="flex flex-col mt-12 lg:mx-12 xl:mx-24 2xl:mx-64 mx-2 border border-gray-700 border-2 rounded-lg p-5">
                     <h3 className="text-white text-2xl mx-auto mb-10">Création du site internet Megacasting</h3>
