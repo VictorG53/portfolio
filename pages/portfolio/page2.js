@@ -47,6 +47,14 @@ const Page2 = () => {
                         <Image className="w-1/2 mb-3 rounded lg:mx-12" width={678} height={300} alt="" src="/img/rouemenu.png"></Image>
                     </div>
                 </div>
+                <div className="flex flex-col mt-12 lg:mx-12 xl:mx-24 2xl:mx-64 mx-2 border border-gray-700 border-2 rounded-lg p-5">
+                    <h3 className="text-white text-2xl mx-auto mb-10">Évolution d'un application React vers Next.js</h3>
+                    <div className="flex items-center justify-around flex-wrap">
+                        <p className="text-white text-justify font-light mb-3 mx-2 lg:mx-12">
+                            Durant mon stage de 2ème année de BTS, j&apos;ai du réalisé une application en React, une librairie javascript. J&apos;ai travaillé sur l&apos;application pendant 1 semaine. Au bout d&apos;une semaine, mon maître de stage m&apos;a demandé de faire évoluer l&apos;application sous Next.js, un framework React. J&apos;ai du réalisé les modification nécessaire pour obtenir la même application sous un autre framework. En suivant des documentations et les conseils de mon maître de stage, j&apos;ai réussi à faire évolué l'application sous Next.js.
+                        </p>
+                    </div>
+                </div>
 
             </div>
         </>
