@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { FastArrowDown, EyeEmpty, EyeClose, Download } from 'iconoir-react'
+import { FastArrowDown, EyeEmpty, EyeClose } from 'iconoir-react'
 import { useEffect, useState } from 'react';
 import GlowingButton from '../../components/glowingButton';
 import { useLoginContext } from '../../components/useContext';
@@ -9,8 +9,6 @@ import Redirect from '../redirect'
 
 const Home = () => {
     const { value } = useLoginContext();
-
-
 
     const [visibility, setVisibility] = useState('opacity-100');
 
