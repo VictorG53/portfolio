@@ -13,8 +13,7 @@ const Home = () => {
     const [visibility, setVisibility] = useState('opacity-100');
 
     const handleScroll = () => {
-        const position = window.pageYOffset;
-        if (position > 300) {
+        if (window.pageYOffset > 300) {
             setVisibility('opacity-0 hover:cursor-default');
         }
         else {
@@ -44,12 +43,12 @@ const Home = () => {
         return <Redirect />
     }
 
-    return <>
+    return <div id="index">
         <Head>
             <title>Victor G. - Portfolio</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <div className="h-screen bg-gradient-to-b from-gray-800 to-gray-900">
+        <div className="h-screen bg-gradient-to-b from-gray-800 to-gray-900 scroll-smooth">
             <div className="flex h-full flex-col justify-center items-center pt-5">
                 <div className="h-5/6 flex flex-col justify-center items-center">
                     <h1 className="font-semibold text-white text-6xl">Portfolio</h1>
@@ -85,7 +84,7 @@ const Home = () => {
             </div>
 
         </div>
-    </>
+    </div>
 }
 
 export default Home;
