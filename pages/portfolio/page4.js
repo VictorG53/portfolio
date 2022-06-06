@@ -32,7 +32,7 @@ const Page4 = () => {
                         </p>
                         <Image className="mb-3 rounded mx-4 lg:mx-12" width={1000} height={350} quality="100" layout="intrinsic" alt="" src="/img/gantt.png"></Image>
                         <p className="text-white text-justify font-light mb-2 mx-2 lg:mx-12 mt-5">
-                            Le diagramme ci-dessus est le diagramme qui à été réaliser pour le projet Megacasting.
+                            Le diagramme ci-dessus est le diagramme qui à été réalisé pour le projet Megacasting.
                         </p>
                     </div>
                 </div>
