@@ -30,11 +30,7 @@ const Index = () => {
             <div className="w-screen h-screen flex flex-col justify-center items-center bg-gradient-to-b from-gray-800 to-gray-900">
                 <h1 className="text-white text-center text-3xl font-bold">Victor Girault</h1>
                 <h2 className="text-xl text-center text-white tracking-wider">Étudiant en développement informatique</h2>
-                <form className="mt-10 flex flex-col" onSubmit={checkAndRedirect}>
-                    <label className="text-gray-300 text-center font-extralight text-sm mb-2">Entrez le mot de passe pour accèder au portfolio</label>
-                    <input type="password" className="outline-none bg-gray-200 text-gray-700 border border-gray-600 rounded mb-3 h-8 px-2 text-center" onChange={(e) => setPassword(e.target.value)}></input>
-                    <input type="submit" className="hover:cursor-pointer max-w-24 px-6 py-2 border text-center text-white rounded hover:bg-white transition hover:text-gray-900 hover:shadow-[0_0_20px_1px_rgba(255,255,255,0.6)]" value="Voir le portfolio"></input>
-                </form>
+                <h5 className="text-lg text-center text-gray-500 tracking-wider mt-10">Content incoming...</h5>
             </div>
         </>
     )
