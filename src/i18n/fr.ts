@@ -7,7 +7,7 @@ export const fr = {
         diplomas: "Diplômes",
         projects: "Mes projets",
     },
-    about: "Je suis développeur full-stack avec une solide expérience en Node.js, passionné par l'apprentissage de nouveaux langages et outils de développement. J'ai récemment approfondi mes connaissances des message brokers en apprenant à utiliser RabbitMQ efficacement.",
+    about: "Développeur fullstack avec une forte appétence pour le côté Ops, j'aime autant concevoir des applications que les déployer dans de bonnes conditions. Toujours en veille sur de nouveaux langages et technologies, je m'épanouis dans les environnements où le développement et l'infrastructure se rejoignent.",
     experience: [
         {
             company: "Uptime",
@@ -53,7 +53,7 @@ export const fr = {
             school: "Institut Informatique Appliquée",
         },
         {
-            title: "BTS SIO",
+            title: "BTS SIO (Option SLAM)",
             years: "2020 — 2022",
             school: "Institut Informatique Appliquée",
         },
@@ -68,7 +68,7 @@ export const fr = {
         },
     ],
     footer: {
-        madeBy: "Fait par",
-        tech: "Développé avec React & Vite",
+        madeBy: "Développé par",
+        tech: "avec React & Vite",
     },
 } as const;

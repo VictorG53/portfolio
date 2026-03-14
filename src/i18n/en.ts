@@ -7,7 +7,7 @@ export const en = {
         diplomas: "Diplomas",
         projects: "Some of my work",
     },
-    about: "I'm a full-stack developer with a strong background in Node.js, passionate about learning new languages and development tools. I recently deepened my knowledge of message brokers by learning to use RabbitMQ efficiently.",
+    about: "Fullstack developer with a strong interest in the Ops side, I enjoy both designing applications and deploying them under the best conditions. Always keeping up with new languages and technologies, I thrive in environments where development and infrastructure meet.",
     experience: [
         {
             company: "Uptime",
@@ -35,18 +35,20 @@ export const en = {
             role: "Internship as Full-Stack developer",
             city: "Laval",
             description: [
-                "Worked on many different projects for real clients such as: a Vinted-like mobile application (with a web back-office) built with React Native and Expo, a React back-office with an Express.js API that generates Excel files from database entries, and a fully custom form web application.",
+                "Development of a mobile application similar to Vinted (with a web back-office) built with React Native and Expo",
+                "Creation of a React back-office with an Express.js API generating Excel files",
+                "Implementation of a fully customized React web form application",
             ],
         },
     ],
     diplomas: [
         {
-            title: "Manager en Ingénierie Informatique",
+            title: "IT Engineering Manager",
             years: "2023 — 2025",
             school: "Institut Informatique Appliquée",
         },
         {
-            title: "Licence Informatique générale",
+            title: "General Computer Science Bachelor's Degree",
             years: "2022 — 2023",
             school: "Institut Informatique Appliquée",
         },
@@ -67,5 +69,6 @@ export const en = {
     ],
     footer: {
         madeBy: "Made by",
+        tech: "with React & Vite",
     },
 } as const;

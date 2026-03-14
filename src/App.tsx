@@ -172,8 +172,8 @@ function App() {
                             className="underline"
                         >
                             Victor
-                        </a>
-                        .
+                        </a>{" "}
+                        {t.footer.tech}.
                     </p>
                 </section>
             </div>
