@@ -9,6 +9,11 @@ export function useTheme() {
     useEffect(() => {
         document.documentElement.classList.toggle("dark", dark);
         localStorage.setItem("theme", dark ? "dark" : "light");
+
+        const favicon = document.querySelector<HTMLLinkElement>("link[rel~='icon']");
+        if (favicon) {
+            favicon.href = dark ? "/favicon-dark.svg" : "/favicon-light.svg";
+        }
     }, [dark]);
 
     return { dark, toggle: () => setDark((d) => !d) };
