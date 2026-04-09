@@ -103,7 +103,6 @@ function App() {
                             </span>{" "}
                             {t.sections.languages}
                         </h2>
-                        Languages
                         <div className="ml-8">
                             {t.languages.map((lang) => (
                                 <div
