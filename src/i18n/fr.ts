@@ -3,11 +3,14 @@ export const fr = {
     sections: {
         about: "À propos de moi",
         skills: "Compétences",
+        hardSkills: "Hard skills",
+        softSkills: "Soft skills",
         experience: "Expérience",
         diplomas: "Diplômes",
         projects: "Mes projets",
+        languages: "Langues",
     },
-    about: "Développeur fullstack avec une forte appétence pour le côté Ops, j'aime autant concevoir des applications que les déployer dans de bonnes conditions. Toujours en veille sur de nouveaux langages et technologies, je m'épanouis dans les environnements où le développement et l'infrastructure se rejoignent.",
+    about: "Développeur fullstack avec une grande expérience en Node.js et une forte appétence pour le côté Ops, je suis curieux de nature et toujours en quête de nouvelles pratiques ou langages à explorer. J'attache beaucoup d'importance à la qualité du code car bien faire les choses est, pour moi, aussi important que les faire.",
     experience: [
         {
             company: "Uptime",
@@ -35,15 +38,15 @@ export const fr = {
             role: "Alternant en tant que développeur Full-Stack",
             city: "Laval",
             description: [
-                "Développement d'une application mobile similaire à Vinted (avec un back-office web) développée avec React Native et Expo",
-                "Création d'un back-office React avec une API Express.js générant des fichiers Excel",
-                "Mise en place d'une application web React de formulaire entièrement personnalisée",
+                "Développement d'une application mobile similaire à Vinted (avec un back-office web) développée avec React Native et Expo.",
+                "Création d'un back-office React avec une API Express.js générant des fichiers Excel.",
+                "Mise en place d'une application web React de formulaire entièrement personnalisée.",
             ],
         },
     ],
     diplomas: [
         {
-            title: "Manager en Ingénierie Informatique",
+            title: "Manager en Ingénierie Informatique (Lead dev)",
             years: "2023 — 2025",
             school: "Institut Informatique Appliquée",
         },
@@ -66,6 +69,12 @@ export const fr = {
                 "Application de messagerie éphémère chiffrée. Les messages sont chiffrés de bout en bout et ne sont jamais stockés",
             tags: ["WebSocket", "AES-256", "React", "Docker"],
         },
+    ],
+    softSkills: ["Autonome", "Curieux", "Polyvalent", "Rigoureux"],
+    languages: [
+        { name: "Français", level: "Natif" },
+        { name: "Anglais", level: "Niveau C1" },
+        { name: "Espagnol", level: "Niveau B1" },
     ],
     footer: {
         madeBy: "Développé par",

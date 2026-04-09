@@ -1,4 +1,11 @@
-import { User, Wrench, Layers, Briefcase, GraduationCap } from "lucide-react";
+import {
+    User,
+    Wrench,
+    Layers,
+    Briefcase,
+    GraduationCap,
+    Languages as LanguagesIcon,
+} from "lucide-react";
 import { DiplomaCard } from "./components/DiplomaCard";
 import { TimelineItem } from "./components/TimelineItem";
 import { SkillTag } from "./components/SkillTag";
@@ -49,28 +56,69 @@ function App() {
 
                 {/* Skills */}
                 <section className="mb-8">
-                    <h2 className="text-lg font-bold mb-3 flex items-center gap-2">
-                        <span className="bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded p-1">
-                            <Wrench
-                                size={14}
-                                className="text-gray-500 dark:text-gray-400"
-                            />
-                        </span>{" "}
-                        {t.sections.skills}
-                    </h2>
-                    <div className="flex flex-wrap gap-2">
-                        <SkillTag name="TypeScript" />
-                        <SkillTag name="React" />
-                        <SkillTag name="Node.js" />
-                        <SkillTag name="Python" />
-                        <SkillTag name="PostgreSQL" />
-                        <SkillTag name="Docker" />
-                        <SkillTag name="Tailwind CSS" />
-                        <SkillTag name="Git" />
-                        <SkillTag name="RabbitMQ" />
-                        <SkillTag name="Java" />
-                        <SkillTag name="Spring Boot" />
-                        <SkillTag name="CI/CD Pipeline" />
+                    <div>
+                        <h2 className="text-lg font-bold mb-3 flex items-center gap-2">
+                            <span className="bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded p-1">
+                                <Wrench
+                                    size={14}
+                                    className="text-gray-500 dark:text-gray-400"
+                                />
+                            </span>{" "}
+                            {t.sections.skills}
+                        </h2>
+                        <p className="text-xs font-bold text-gray-500 dark:text-gray-400 mb-2 ml-8">
+                            {t.sections.hardSkills}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-4 ml-8">
+                            <SkillTag name="TypeScript" />
+                            <SkillTag name="React" />
+                            <SkillTag name="Node.js" />
+                            <SkillTag name="Python" />
+                            <SkillTag name="PostgreSQL" />
+                            <SkillTag name="Docker" />
+                            <SkillTag name="Tailwind CSS" />
+                            <SkillTag name="Git" />
+                            <SkillTag name="RabbitMQ" />
+                            <SkillTag name="Java" />
+                            <SkillTag name="Spring Boot" />
+                            <SkillTag name="CI/CD Pipeline" />
+                        </div>
+                        <p className="text-xs font-bold text-gray-500 dark:text-gray-400 mb-2 ml-8">
+                            {t.sections.softSkills}
+                        </p>
+                        <div className="flex flex-wrap gap-2 ml-8">
+                            {t.softSkills.map((skill) => (
+                                <SkillTag key={skill} name={skill} />
+                            ))}
+                        </div>
+                    </div>
+                    {/* Languages */}
+                    <div className="mt-4">
+                        <h2 className="text-lg font-bold mb-3 flex items-center gap-2">
+                            <span className="bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded p-1">
+                                <LanguagesIcon
+                                    size={14}
+                                    className="text-gray-500 dark:text-gray-400"
+                                />
+                            </span>{" "}
+                            {t.sections.languages}
+                        </h2>
+                        Languages
+                        <div className="ml-8">
+                            {t.languages.map((lang) => (
+                                <div
+                                    key={lang.name}
+                                    className="flex justify-between items-center py-1 border-b border-gray-200 dark:border-gray-700"
+                                >
+                                    <span className="text-xs font-bold">
+                                        {lang.name}
+                                    </span>
+                                    <span className="text-xs text-gray-500 dark:text-gray-400">
+                                        {lang.level}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </section>
 
