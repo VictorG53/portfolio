@@ -2,6 +2,16 @@
 
 @variant dark (&:where(.dark, .dark *));
 
+html,
+body {
+    background-color: white;
+}
+
+html.dark,
+html.dark body {
+    background-color: #111827;
+}
+
 @theme {
   --font-space-mono: 'Space Mono', monospace;
 }
