@@ -14,7 +14,7 @@ export const fr = {
     experience: [
         {
             company: "Uptime",
-            period: "Octobre 2025 — Mars 2026",
+            period: "Octobre 2025 — Aujourd'hui",
             role: "Développeur Full-Stack",
             city: "Rennes",
             description: [
