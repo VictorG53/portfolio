@@ -69,6 +69,13 @@ export const fr = {
                 "Application de messagerie éphémère chiffrée. Les messages sont chiffrés de bout en bout et ne sont jamais stockés",
             tags: ["WebSocket", "AES-256", "React", "Docker"],
         },
+        {
+            title: "CV Builder",
+            href: "https://cv.fwszs.dev",
+            description:
+                "Générateur de CV : renseignez vos informations dans un formulaire et téléchargez directement votre CV au format PDF",
+            tags: ["React", "react-pdf", "Docker"],
+        },
     ],
     softSkills: ["Autonome", "Curieux", "Polyvalent", "Rigoureux"],
     languages: [

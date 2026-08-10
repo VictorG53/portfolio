@@ -69,6 +69,13 @@ export const en = {
                 "Encrypted ephemeral messaging app. Messages are end-to-end encrypted and never stored",
             tags: ["WebSocket", "AES-256", "React", "Docker"],
         },
+        {
+            title: "CV Builder",
+            href: "https://cv.fwszs.dev",
+            description:
+                "CV generator: fill in your information through a form and download your CV directly as a PDF",
+            tags: ["React", "react-pdf", "Docker"],
+        },
     ],
     softSkills: ["Autonomous", "Curious", "Versatile", "Rigorous"],
     languages: [
