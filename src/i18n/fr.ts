@@ -76,6 +76,13 @@ export const fr = {
                 "Générateur de CV : renseignez vos informations dans un formulaire et téléchargez directement votre CV au format PDF",
             tags: ["React", "react-pdf", "Docker"],
         },
+        {
+            title: "Dither+",
+            href: "https://dither-plus.fwszs.dev",
+            description:
+                "Studio de tramage d'image : applique des algorithmes de dithering classiques (Floyd–Steinberg, Bayer, Atkinson...) sur n'importe quelle image, directement dans le navigateur",
+            tags: ["React", "Canvas", "Docker"],
+        },
     ],
     softSkills: ["Autonome", "Curieux", "Polyvalent", "Rigoureux"],
     languages: [

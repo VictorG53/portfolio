@@ -76,6 +76,13 @@ export const en = {
                 "CV generator: fill in your information through a form and download your CV directly as a PDF",
             tags: ["React", "react-pdf", "Docker"],
         },
+        {
+            title: "Dither+",
+            href: "https://dither-plus.fwszs.dev",
+            description:
+                "Image dithering studio: apply classic dithering algorithms (Floyd–Steinberg, Bayer, Atkinson...) to any image directly in the browser",
+            tags: ["React", "Canvas", "Docker"],
+        },
     ],
     softSkills: ["Autonomous", "Curious", "Versatile", "Rigorous"],
     languages: [
